@@ -38,6 +38,8 @@
 				"no-tabs": 0,
 				"react/jsx-indent": 0,
         "react/prop-types": 0,
-        "arrow-body-style": 0
+        "arrow-body-style": 0,
+				"react/jsx-filename-extension": 0,
+				"comma-dangle": 0
     }
 }

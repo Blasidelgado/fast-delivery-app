@@ -5,14 +5,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Para el template del HTML que va a usar Webpack
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Para reducir los CSS
 const { SourceMapDevToolPlugin } = require('webpack'); // Para conocer el Source Map de nuestro proyecto
+const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 
 // Configuraciones de puerto
 const port = process.env.PORT || 3000;
 
 // Exportar configuración de WebPack
 module.exports = {
-
-    entry: './src/index.jsx',
+    entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.[fullhash].js',
@@ -34,7 +34,6 @@ module.exports = {
                 test: /(\.js|\.jsx)$/,
                 exclude: /node_modules/,
                 use: [
-                  'eslint-loader',
                   'source-map-loader',
                 ],
             },
@@ -74,6 +73,7 @@ module.exports = {
         ],
     },
     plugins: [
+				new ESLintWebpackPlugin(),
         new HtmlWebpackPlugin(
           {
             template: './public/index.html',
