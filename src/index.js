@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client';
 // Imports de Redux
 // import { Provider } from 'react-redux';
 
-import App from './App';
+import App from './app';
 
 // Importamos las hojas de estilos
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,5 +16,4 @@ import './styles/css/index.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
-    // <AppRoutingExercise />
 );
