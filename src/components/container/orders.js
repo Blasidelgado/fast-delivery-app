@@ -55,7 +55,6 @@ function preventDefault(event) {
 export default function Orders() {
   return (
     <>
-      <h2>Recent Orders</h2>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -79,7 +78,7 @@ export default function Orders() {
         </TableBody>
       </Table>
       <Button color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
-        See more orders
+        Create new Order
       </Button>
     </>
   );
