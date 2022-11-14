@@ -17,8 +17,8 @@ const HomeMain = () => {
 	return (
 		<section>
 			<div className="main-titles">
-				<h1 className="title primary">Tu delivery de agua</h1>
-				<h1 className="title secondary">Siempre</h1>
+				<h1 className="title primary">We are your water delivery</h1>
+				<h1 className="title secondary">ALL THE TIME</h1>
 			</div>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />

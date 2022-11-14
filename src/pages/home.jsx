@@ -1,21 +1,22 @@
+import { AppBar } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HomeMain from '../components/container/homeMain';
+import ButtonAppBar from '../components/pure/basicAppBar';
 import HeaderUnlogged from '../components/pure/headerUnlogged';
 
 const Home = () => {
 	return (
 		<>
-			<header>
-				<HeaderUnlogged />
-			</header>
+				<ButtonAppBar />
+				{/* <HeaderUnlogged /> */}
 			<main>
 				<HomeMain />
 				<section className="bottom-section">
 					<h3>
-						Te llevamos el agua cuando
-						<span> VOS </span>
-						quieras
+						Get your water whenever
+						<span> YOU </span>
+						want
 					</h3>
 					<div className="home-bottomdiv">
 					<button type="button">
