@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import AdminPage from './pages/adminPage';
-import Home from './pages/home';
-import Login from './pages/login';
-import Page404 from './pages/page404';
-import Register from './pages/register';
+import Home from './pages/homePage';
+import Login from './pages/loginPage';
+import Page404 from './pages/404Page';
+import Register from './pages/registerPage';
 import UserPage from './pages/userPage';
 
 const App = () => {

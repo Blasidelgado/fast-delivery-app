@@ -7,15 +7,18 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
+import { useNavigate } from 'react-router-dom';
 
 import '../../styles/css/index.scss';
 
 export default function ButtonAppBar() {
+	const navigate = useNavigate();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-					<img className="logo" src="/images/logo.png" alt="logo" />
+					<img className="logo" src="/images/logo.png" alt="logo" onClick={() => navigate('/') } />
           <Typography
             variant="h6"
             noWrap
@@ -34,7 +37,7 @@ export default function ButtonAppBar() {
           >
 						Polar
           </Typography>
-          <Button className="header-button" color="inherit">Login</Button>
+          <Button className="header-button" color="inherit" onClick={() => navigate('/login')}>Login</Button>
         </Toolbar>
       </AppBar>
     </Box>

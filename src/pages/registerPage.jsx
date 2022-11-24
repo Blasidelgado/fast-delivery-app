@@ -1,8 +1,11 @@
 import React from 'react';
+import SignUp from '../components/pure/registerForm';
 
 const Register = () => {
 	return (
-		<h1>Register</h1>
+		<>
+			<SignUp />
+		</>
 	);
 };
 
