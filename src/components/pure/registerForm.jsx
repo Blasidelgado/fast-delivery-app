@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { registerUser } from '../../services/reqresService';
 
 function Copyright(props) {
   return (
@@ -37,6 +38,7 @@ const SignUp = () => {
       email: data.get('email'),
       password: data.get('password'),
     });
+		registerUser(data);
   };
 
   return (
